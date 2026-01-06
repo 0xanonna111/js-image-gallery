@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="gallery">
+    <h2>Image Gallery</h2>
+
+    <div class="grid">
+      <img src="https://picsum.photos/200/150?1" onclick="openImg(this.src)" />
+      <img src="https://picsum.photos/200/150?2" onclick="openImg(this.src)" />
+      <img src="https://picsum.photos/200/150?3" onclick="openImg(this.src)" />
+      <img src="https://picsum.photos/200/150?4" onclick="openImg(this.src)" />
+      <img src="https://picsum.photos/200/150?5" onclick="openImg(this.src)" />
+      <img src="https://picsum.photos/200/150?6" onclick="openImg(this.src)" />
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" onclick="closeImg()">
+    <img id="modalImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
